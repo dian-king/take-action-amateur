@@ -153,6 +153,7 @@ body {
 
 .home .logo {
   color: white;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .home .menu li a {
