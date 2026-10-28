@@ -1,16 +1,6 @@
-/* =========================
-   BROWN STEP BANK - style.css
-   my colors:
-   brown = #7A4A0A
-   gold  = #C19A3B
-   light gold = #ebac0b
-   cream = #fdf8ee
-   ========================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
@@ -20,50 +10,41 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-/* ---------- HEADER ---------- */
-
 .top {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-between ;
   flex-wrap: wrap;
   padding: 15px 30px;
   background-color: white;
   border-bottom: 4px solid #7A4A0A;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+  align-items: center;
 
+}
 .top a {
   text-decoration: none;
 }
 
-.logo {
-  font-size: 20px;
-  color: #7A4A0A;
-  border: 2px solid #C19A3B;
-  border-radius: 6px;
-  padding: 5px 12px;
-  line-height: 1.3;
+.Logo {
+   height: 65px;
+  width: auto;
+  display: block;
+  
 }
-
 .small {
   font-size: 11px;
   color: #C19A3B;
 }
-
 .menu {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
-}
 
+}
 .menu li {
   display: inline-block;
   position: relative;
 }
-
 .menu li a {
   display: inline-block;
   color: #7A4A0A;
@@ -80,17 +61,14 @@ body {
   background-color: #7A4A0A;
 }
 
-/* dropdown menus */
 .drop {
   display: none;
   position: absolute;
   left: 0;
   top: 100%;
-  z-index: 10;
   background-color: white;
   border: 1px solid #C19A3B;
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -118,7 +96,6 @@ body {
   display: block;
 }
 
-/* ---------- HOME PAGE ---------- */
 
 .home {
   background-color: black;
@@ -134,26 +111,11 @@ body {
   z-index: -2;
 }
 
-/* dark layer so the text is easier to read on the video */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  z-index: -1;
-}
 
 .home .top {
   background-color: transparent;
-  border-bottom: 1px solid rgba(193, 154, 59, 0.5);
+  border-bottom: 0px solid rgba(193, 154, 59, 0.5);
   box-shadow: none;
-}
-
-.home .logo {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .home .menu li a {
@@ -173,12 +135,45 @@ body {
   border-bottom: 1px solid #9a6420;
 }
 
+.buttn {
+  display: flex;
+  align-items: stretch;
+}
+
+.btnrow {
+  width: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #C19A3B;
+  color: white;
+  padding: 12px 45px;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #7A4A0A;
+  color: white;
+  transform: scale(1.05);
+}
 .main {
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 40px 30px;
+  width: 50%;
+  box-shadow: 10px 10px transparent;
 }
 
 .left {
@@ -200,7 +195,6 @@ body {
   color: white;
 }
 
-/* the numbers on home page */
 .stats {
   display: flex;
   gap: 15px;
@@ -222,7 +216,7 @@ body {
 }
 
 .stat span {
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
 }
 
@@ -236,37 +230,6 @@ body {
     transform: translateY(0);
   }
 }
-
-/* ---------- BUTTON ---------- */
-
-.button {
-  background-color: #C19A3B;
-  color: white;
-  padding: 12px 22px;
-  text-decoration: none;
-  border: none;
-  border-radius: 30px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-  background-color: #7A4A0A;
-  color: white;
-  transform: scale(1.05);
-}
-
-.center {
-  text-align: center;
-}
-
-/* ---------- OTHER PAGES ---------- */
-
 .page {
   max-width: 1100px;
   background-color: white;
@@ -274,18 +237,15 @@ body {
   margin: 30px auto;
   border-top: 6px solid #7A4A0A;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .page h1 {
   color: #7A4A0A;
   text-align: center;
-  margin-top: 0;
   letter-spacing: 2px;
 }
 
-/* little gold line under the title */
-.page h1:after {
+.page h1:after { 
   content: "";
   display: block;
   width: 70px;
@@ -304,8 +264,8 @@ body {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;  
 }
 
 .box {
@@ -322,14 +282,13 @@ body {
   font-size: 21px;
   scroll-margin-top: 20px;
 }
-
 .boxes .box:hover {
   border-color: #C19A3B;
   transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(122, 74, 10, 0.2);
+  box-shadow: none;
+
 }
 
-/* the special gold box at the end */
 .goldbox {
   background-color: #fff6dd;
   border-color: #C19A3B;
@@ -338,53 +297,11 @@ body {
 .goldbox p {
   color: black;
 }
-
-/* extra info under open account button */
-.accinfo {
-  margin-top: 15px;
-  background-color: #fdf8ee;
-  border-left: 4px solid #C19A3B;
-  padding: 5px 12px;
-  font-size: 14px;
-  text-align: left;
-}
-
-/* ---------- FOOTER ---------- */
-
 .footer {
-  background-color: #7A4A0A;
+  background-color:transparent;
   color: white;
   text-align: center;
   padding: 12px;
   font-size: 13px;
-  border-top: 3px solid #C19A3B;
-}
-
-/* ---------- PHONE ---------- */
-
-@media (max-width: 700px) {
-  .top {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .menu li a {
-    padding: 6px 8px;
-    font-size: 12px;
-  }
-
-  .main {
-    justify-content: center;
-    padding: 30px 16px;
-  }
-
-  .left h1 {
-    font-size: 40px;
-  }
-
-  .page {
-    margin: 15px;
-    padding: 20px;
-  }
+  border-top: 0px solid #C19A3B;
 }
